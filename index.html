@@ -6,6 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <body>
+        <div class="dice">
+        <img src="dice (4).png" id="dice">
+        <br> <br>
+        <button type="button" class="button" onclick="rolldice()"> Roll</button>
+        <script>
+         const diceImg=document.getElementById("dice")
+         function rolldice(){
+            const min = 1;
+            const max = 7;
+            const randomNumber =Math.floor(Math.random() * (max-min))
+            if(randomNumber == 1){
+                diceImg.src ="dice.png";
+            }
+            else if (randomNumber == 2){
+                diceImg.src ="dice (5).png";
+            }
+            else if (randomNumber == 3){
+                diceImg.src ="dice (2).png";
+            }
+            else if (randomNumber == 4){
+                diceImg.src ="dice (3).png";
+            }
+            else if (randomNumber == 5){
+                diceImg.src ="dice (1).png";
+            }
+         }
+        </script>
+        </div>
 </body>
 </html>
